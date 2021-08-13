@@ -6,4 +6,12 @@ Built with [Ergogen](https://github.com/mrzealot/ergogen).
 
 ### To Run Locally
 
-Due to an issue with libraries to generate, run `npm install` in the base directory, then run `npm install` in the `./node_modules/kle-serial` folder.
+**If you do not have Node.js installed** 
+
+Install using [the installer](https://nodejs.org/en/download/) [NVM,](https://github.com/nvm-sh/nvm) or [Chocolatey](https://community.chocolatey.org/packages/nodejs-lts) depending on your platform.  Using the installer usually leads to permission issues with NPM so it's suggested to use either NVM or chocolatey if you don't want to mess with it too much.
+
+Once this is installed run `npm i -g npm` to upgrade NPM to the latest version.
+
+**After Node.js is installed**
+
+Run `npm install` in the base directory, then run `npm install` in the `./node_modules/kle-serial` folder.  This is due to some issues with how the Ergogen project is using its dependencies, though hopefully will be fixed soon.
