@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "gen": "ergogen a-duck.yaml"
+    },
+    "dependencies": {
+        "ergogen": "^3.0.0"
+    }
+}
