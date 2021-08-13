@@ -83,7 +83,7 @@ points:
             type: choc
             nets:
               from: =column_net
-              to: GND
+              to: =colrow
             params:
                 keycaps: true
                 reverse: true
@@ -94,7 +94,7 @@ points:
               rotate: 180
             nets:
               from: =column_net
-              to: GND
+              to: =colrow
             params:
                 keycaps: true
                 reverse: true
@@ -140,7 +140,7 @@ points:
             type: choc
             nets:
               from: =column_net
-              to: GND
+              to: =colrow
             params:
                 keycaps: true
                 reverse: true
@@ -151,7 +151,7 @@ points:
               rotate: 180
             nets:
               from: =column_net
-              to: GND
+              to: =colrow
             params:
                 keycaps: true
                 reverse: true
@@ -188,7 +188,7 @@ outlines:
         name: third
         fillet: 0.5
 pcbs:
-  architeuthis_dux:
+  a_duck:
     outlines:
       main:
         outline: panel
