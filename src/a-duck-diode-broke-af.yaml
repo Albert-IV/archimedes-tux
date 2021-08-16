@@ -81,22 +81,31 @@ points:
         footprints:
           choc_hotswap:
             type: choc
-            anchor:
-              rotate: 180
             nets:
               from: =column_net
-              to: GND
-            params:
-                keycaps: true
-                reverse: true
-                hotswap: true
-          diode:
-            type: diode
-            anchor:
-              shift: [0, 5]
-            nets: 
-              from: =column_net
               to: =colrow
+            params:
+                # keycaps: true
+                # reverse: true
+                hotswap: true
+          # choc:
+          #   type: choc
+          #   anchor:
+          #     rotate: 180
+          #   nets:
+          #     from: =column_net
+          #     to: =colrow
+          #   params:
+          #       keycaps: true
+          #       reverse: true
+          # diode:
+          #   type: diode
+          #   anchor:
+          #     # rotate: 90
+          #     # shift: [-5, 0]
+          #   nets: 
+          #     from: =column_net
+          #     to: =colrow
       rows:
         bottom:
           padding: 17
@@ -137,22 +146,32 @@ points:
         footprints:
           choc_hotswap:
             type: choc
-            anchor:
-              rotate: 180
             nets:
               from: =column_net
-              to: GND
-            params:
-                keycaps: true
-                reverse: true
-                hotswap: true
-          diode:
-            type: diode
-            anchor:
-              shift: [0, 5]
-            nets: 
-              from: =column_net
               to: =colrow
+            params:
+                # keycaps: true
+                # reverse: true
+                hotswap: true
+          # choc:
+          #   type: choc
+          #   anchor:
+          #     rotate: 180
+          #   nets:
+          #     from: =column_net
+          #     to: =colrow
+          #   params:
+          #       keycaps: true
+          #       reverse: true
+          #       diode: true
+          # diode:
+          #   type: diode
+          #   anchor:
+          #     # rotate: 90
+          #     # shift: [-5, 0]
+          #   nets: 
+          #     from: =column_net
+          #     to: =colrow
 outlines:
   exports:
     raw:
