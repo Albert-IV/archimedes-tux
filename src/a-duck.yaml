@@ -109,9 +109,12 @@ points:
             type: diode
             anchor:
               shift: [0, 5]
+              rotate: 180
             nets:
               from: =colrow
               to: =row_net
+            params:
+              tht: false
       rows:
         bottom:
           padding: 17
@@ -168,9 +171,12 @@ points:
             type: diode
             anchor:
               shift: [0, 5]
+              rotate: 180
             nets:
               from: =colrow
               to: =row_net
+            params:
+              tht: false
 outlines:
   exports:
     raw:

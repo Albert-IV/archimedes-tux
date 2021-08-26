@@ -1,5 +1,6 @@
 {
     "scripts": {
+        "patch-footprints": "cp ./footprints/* ./node_modules/ergogen/src/footprints/ ",
         "gen": "ergogen src/a-duck.yaml",
         "gen-absol": "ergogen src/absolem.yaml"
     },
