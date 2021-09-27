@@ -150,7 +150,7 @@ points:
             only:
               column_net: P5
               row_net: P10
-              bind: [0, 0, 0, 5]
+              bind: [0, 0, 0, 6]
       rows:
         only:
           padding: 17
