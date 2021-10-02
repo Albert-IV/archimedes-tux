@@ -141,7 +141,7 @@ points:
             only:
               column_net: P6
               row_net: P10
-              bind: [0, 0, 0, 5]
+              bind: [0, 1, 0, 5]
         third:
           spread: 18
           rotate: -10
@@ -182,7 +182,7 @@ outlines:
     raw:
       - type: keys
         side: left
-        size: [18,17]
+        size: [20,17]
         corner: 1
     first:
       - type: outline
@@ -192,19 +192,11 @@ outlines:
       - type: outline
         name: first
         fillet: 2
-    third:
-      - type: outline
-        name: second
-        fillet: 1   
-    panel:
-      - type: outline
-        name: third
-        fillet: 0.5
 pcbs:
   a_duck:
     outlines:
       main:
-        outline: panel
+        outline: second
     footprints:
       promicro:
         type: promicro
