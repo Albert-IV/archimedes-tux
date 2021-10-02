@@ -10,15 +10,15 @@ points:
             bottom:
               bind: [5, 0, 0, 0]
               column_net: P9
-              row_net: P16
+              row_net: P14
             home:
               bind: [0, 12, 0, 0]
               column_net: P9
-              row_net: P14
+              row_net: P16
             top:
               bind: [0, 8, 5, 0]
               column_net: P9 
-              row_net: P15
+              row_net: P10
         ring:
           spread: 18
           stagger: 17
@@ -28,15 +28,15 @@ points:
             bottom:
               bind: [0, 0, 2, 10]
               column_net: P8
-              row_net: P16
+              row_net: P14
             home:
               bind: [5, 0, 5, 0]
               column_net: P8
-              row_net: P14
+              row_net: P16
             top:
               bind: [0, 5, 0, 0]
               column_net: P8
-              row_net: P15
+              row_net: P10
         middle:
           spread: 18
           stagger: 17/3
@@ -46,15 +46,15 @@ points:
             bottom:
               bind: [0, 10, 0, 5]
               column_net: P7
-              row_net: P16
+              row_net: P14
             home:
               bind: 5
               column_net: P7           
-              row_net: P14
+              row_net: P16
             top:
               bind: [0, 0, 0, 0]
               column_net: P7
-              row_net: P15
+              row_net: P10
           key:
             shift: [0.2, 0]
         index:
@@ -66,15 +66,15 @@ points:
             bottom:
               bind: [0, 5, 0, 0]
               column_net: P6
-              row_net: P16
+              row_net: P14
             home:
               bind: [5, 0, 5, 0]
               column_net: P6
-              row_net: P14
+              row_net: P16
             top:
               bind: [0, 0, 0, 6]
               column_net: P6
-              row_net: P15
+              row_net: P10
         inner:
           spread: 18
           stagger: -17/6
@@ -83,15 +83,15 @@ points:
             bottom:
               bind: [5, 19, 20, 2]
               column_net: P5
-              row_net: P16
+              row_net: P14
             home:
               bind: [0, 27, 0, 5]
               column_net: P5
-              row_net: P14
+              row_net: P16
             top:
               bind: [0, 0, 5, 5]
               column_net: P5
-              row_net: P15
+              row_net: P10
       key:
         footprints:
           choc_hotswap:
@@ -131,7 +131,7 @@ points:
           rows:
             only:
               column_net: P7
-              row_net: P10
+              row_net: P15
               bind: [10, 1, 0, 70]
         second:
           spread: 18
@@ -140,7 +140,7 @@ points:
           rows:
             only:
               column_net: P6
-              row_net: P10
+              row_net: P15
               bind: [0, 1, 0, 5]
         third:
           spread: 18
@@ -149,7 +149,7 @@ points:
           rows:
             only:
               column_net: P5
-              row_net: P10
+              row_net: P15
               bind: [0, 0, 0, 6]
       rows:
         only:
