@@ -1,4 +1,4 @@
-# A. Duck Keyboard
+# Archimedes Tux Keyboard
 
 Based off the excellent [Architeuthis dux keyboard](https://github.com/tapioki/cephalopoda/tree/main/Architeuthis%20dux), the goal is to add a third thumb key and see where else this takes me.
 
@@ -14,4 +14,4 @@ Once this is installed run `npm i -g npm` to upgrade NPM to the latest version.
 
 **After Node.js is installed**
 
-Run `npm install` in the base directory, then run `npm install` in the `./node_modules/kle-serial` folder.  This is due to some issues with how the Ergogen project is using its dependencies, though hopefully will be fixed soon.
+Run `npm run patch-footprints` in the base directory.  This is updates one of the footprints to allow for SMD or through-hole only diodes.

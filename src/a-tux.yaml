@@ -193,7 +193,7 @@ outlines:
         name: first
         fillet: 2
 pcbs:
-  a_duck:
+  a_tux:
     outlines:
       main:
         outline: second
