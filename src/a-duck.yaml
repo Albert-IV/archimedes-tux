@@ -216,8 +216,6 @@ pcbs:
           ref: matrix_inner_home
           shift: [25, -32]
           rotate: -90
-        # params:
-        #   orientation: down
 
       trrs:
         type: trrs
