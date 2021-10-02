@@ -206,6 +206,19 @@ pcbs:
           rotate: -90
         params:
           orientation: down
+
+      reset:
+        type: button
+        nets:
+          from: GND
+          to: RST
+        anchor:
+          ref: matrix_inner_home
+          shift: [25, -32]
+          rotate: -90
+        # params:
+        #   orientation: down
+
       trrs:
         type: trrs
         nets:
