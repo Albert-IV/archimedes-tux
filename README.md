@@ -15,7 +15,6 @@ Built with [Ergogen](https://github.com/mrzealot/ergogen).
 
 ## Ideas / Goals
 
-- [ ] Re-add solder locations for switches instead of only hotswap
 - [ ] Re-add Puck support
 - [ ] Change routing in bottom area to allow for larger silkscreen eye
 - [ ] Rotate thumbs to allow 1.5u / 2u keycaps
@@ -32,6 +31,7 @@ v0.1 -> v0.2
 - [x] Add reset switch / pads
 - [x] Fix edge cuts / drilling.  (Tapi believes this is an issue due to the multiple fillets / outlines in the Ergogen script)
 - [x] Rename repo / files
+- [x] Re-add solder locations for switches instead of only hotswap
 
 
 ### To Run Locally

@@ -105,11 +105,19 @@ points:
                 keycaps: true
                 reverse: true
                 hotswap: true
+          choc:
+            type: choc
+            nets:
+              from: =colrow
+              to: =column_net
+            params:
+                keycaps: true
+                reverse: true
           diode:
             type: diode
             anchor:
-              shift: [0, 5]
-              rotate: 180
+              shift: [7.75, 2]
+              rotate: 90
             nets:
               from: =colrow
               to: =row_net
@@ -167,11 +175,19 @@ points:
                 keycaps: true
                 reverse: true
                 hotswap: true
+          choc:
+            type: choc
+            nets:
+              from: =colrow
+              to: =column_net
+            params:
+                keycaps: true
+                reverse: true
           diode:
             type: diode
             anchor:
-              shift: [0, 5]
-              rotate: 180
+              shift: [-7.75, 2]
+              rotate: 90
             nets:
               from: =colrow
               to: =row_net
