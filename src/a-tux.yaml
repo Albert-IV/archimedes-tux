@@ -141,6 +141,37 @@ points:
               column_net: P7
               row_net: P15
               bind: [10, 1, 0, 70]
+          key:
+            footprints:
+              choc_hotswap:
+                type: choc
+                anchor:
+                  rotate: 180
+                nets:
+                  from: =colrow
+                  to: =column_net
+                params:
+                    keycaps: true
+                    reverse: true
+                    hotswap: true
+              choc:
+                type: choc
+                nets:
+                  from: =colrow
+                  to: =column_net
+                params:
+                    keycaps: true
+                    reverse: true
+              diode:
+                type: diode
+                anchor:
+                  shift: [-7.75, 2]
+                  rotate: 90
+                nets:
+                  from: =colrow
+                  to: =row_net
+                params:
+                  tht: false
         second:
           spread: 18
           rotate: -10
@@ -150,6 +181,37 @@ points:
               column_net: P6
               row_net: P15
               bind: [0, 1, 0, 5]
+          key:
+            footprints:
+              choc_hotswap:
+                type: choc
+                anchor:
+                  rotate: 180
+                nets:
+                  from: =colrow
+                  to: =column_net
+                params:
+                    keycaps: true
+                    reverse: true
+                    hotswap: true
+              choc:
+                type: choc
+                nets:
+                  from: =colrow
+                  to: =column_net
+                params:
+                    keycaps: true
+                    reverse: true
+              diode:
+                type: diode
+                anchor:
+                  shift: [-7.75, 2]
+                  rotate: 90
+                nets:
+                  from: =colrow
+                  to: =row_net
+                params:
+                  tht: false
         third:
           spread: 18
           rotate: -10
@@ -159,6 +221,39 @@ points:
               column_net: P5
               row_net: P15
               bind: [0, 0, 0, 6]
+          key:
+            footprints:
+              choc_hotswap:
+                type: choc
+                anchor:
+                  rotate: 270
+                nets:
+                  from: =colrow
+                  to: =column_net
+                params:
+                    keycaps: true
+                    reverse: true
+                    hotswap: true
+              choc:
+                type: choc
+                anchor:
+                  rotate: 90
+                nets:
+                  from: =colrow
+                  to: =column_net
+                params:
+                    keycaps: true
+                    reverse: true
+              diode:
+                type: diode
+                anchor:
+                  shift: [-8, 2]
+                  rotate: 90
+                nets:
+                  from: =colrow
+                  to: =row_net
+                params:
+                  tht: false
       rows:
         only:
           padding: 17
@@ -198,7 +293,7 @@ outlines:
     raw:
       - type: keys
         side: left
-        size: [20,17]
+        size: [20,20]
         corner: 1
     first:
       - type: outline
@@ -218,7 +313,7 @@ pcbs:
         type: promicro
         anchor:
           ref: matrix_inner_home
-          shift: [19, -8.5]
+          shift: [19, -7]
           rotate: -90
         params:
           orientation: down
@@ -242,7 +337,7 @@ pcbs:
           D: VCC
         anchor:
           ref: matrix_inner_home
-          shift: [34.75, 6.5]
+          shift: [34.75, 8]
         params:
           reverse: true
           symmetric: true

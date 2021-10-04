@@ -17,7 +17,6 @@ Built with [Ergogen](https://github.com/mrzealot/ergogen).
 
 - [ ] Re-add Puck support
 - [ ] Change routing in bottom area to allow for larger silkscreen eye
-- [ ] Rotate thumbs to allow 1.5u / 2u keycaps
 - [ ] Mousebites on TRRS jack (removable TRRS socket for better [[Nice!Nano]] support)
 - [ ] On / Off switch routing for Bluetooth
 - [ ] Battery Routing with JST / pads for battery
@@ -32,6 +31,7 @@ v0.1 -> v0.2
 - [x] Fix edge cuts / drilling.  (Tapi believes this is an issue due to the multiple fillets / outlines in the Ergogen script)
 - [x] Rename repo / files
 - [x] Re-add solder locations for switches instead of only hotswap
+- [x] Rotate thumbs to allow 1.5u / 2u keycaps
 
 
 ### To Run Locally
