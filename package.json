@@ -1,7 +1,8 @@
 {
     "scripts": {
         "patch-footprints": "cp ./footprints/* ./node_modules/ergogen/src/footprints/ ",
-        "gen": "ergogen ./src/a-tux.yaml"
+        "gen": "ergogen ./src/a-tux.yaml",
+        "patch-and-gen": "npm run patch-footprints && npm run gen"
     },
     "dependencies": {
         "ergogen": "^3.0.0"
