@@ -16,13 +16,17 @@ Built with [Ergogen](https://github.com/mrzealot/ergogen).
 ## Ideas / Goals
 
 - [ ] Re-add Puck support
+  - [x]  Add initial footprint to library
+  - [x]  Fix text when rotation makes the text apppear in the wrong order
+  - [x]  Make each individual screw hole able to be turned on / off
+  - [x]  Add PR to Erogogen
+  - [ ]  Add / place puck on board
+- [ ] Make Pro Micro footprint reversible
 - [ ] Change routing in bottom area to allow for larger silkscreen eye
 - [ ] Mousebites on TRRS jack (removable TRRS socket for better [[Nice!Nano]] support)
 - [ ] On / Off switch routing for Bluetooth
 - [ ] Battery Routing with JST / pads for battery
 - [ ] Mousebites on third thumb key?
-
-
 
 v0.1 -> v0.2
 
@@ -32,7 +36,6 @@ v0.1 -> v0.2
 - [x] Rename repo / files
 - [x] Re-add solder locations for switches instead of only hotswap
 - [x] Rotate thumbs to allow 1.5u / 2u keycaps
-
 
 ### To Run Locally
 
