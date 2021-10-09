@@ -2,18 +2,18 @@ module.exports = {
   nets: {},
   params: {
     reverseSilks: false,
+    centerHole: false,
     northHole: true,
     westHole: true,
     southHole: true,
     eastHole: true,
   },
-  body: p => {
-
-    let wordParts
-    if(p.param.reverseSilks) {
-      wordParts = ['puck', 'tenting']
+  body: (p) => {
+    let wordParts;
+    if (p.param.reverseSilks) {
+      wordParts = ["puck", "tenting"];
     } else {
-      wordParts = ['tenting', 'puck']
+      wordParts = ["tenting", "puck"];
     }
 
     return `
@@ -51,13 +51,19 @@ module.exports = {
   (fp_text user ${wordParts[0]} (at -0.1905 6.858 ${p.rot + 90}) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.1)))
   )
-  (fp_text user ${wordParts[1]} (at -0.254 -6.0325 ${p.rot + 90}) (layer F.SilkS)
+  (fp_text user ${wordParts[1]} (at -0.254 -6.0325 ${
+      p.rot + 90
+    }) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.1)))
   )
-  (fp_text user ${wordParts[0]} (at -0.254 -6.9215 ${p.rot + 90}) (layer B.SilkS)
+  (fp_text user ${wordParts[0]} (at -0.254 -6.9215 ${
+      p.rot + 90
+    }) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.1)) (justify mirror))
   )
-  (fp_text user ${wordParts[1]} (at -0.1905 6.0325 ${p.rot + 90} unlocked) (layer B.SilkS)
+  (fp_text user ${wordParts[1]} (at -0.1905 6.0325 ${
+      p.rot + 90
+    } unlocked) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.1)) (justify mirror))
   )
   (fp_arc (start 0 0) (end 0 10.795) (angle 6) (layer F.SilkS) (width 0.2))
@@ -154,28 +160,40 @@ module.exports = {
     (xy 1.839703 14.981359) (xy 1.898519 15.041077) (xy 1.944466 15.087731) (xy 1.976327 15.120084)
     (xy 1.990108 15.13408) (xy 2.080952 15.226356) (xy 2.080952 12.484486) (xy 1.584498 12.484486)
     (xy 1.584498 14.118044)) (layer B.SilkS) (width 0.01))
-  (pad "" thru_hole circle (at 0 0 ${p.rot}) (size 6.8 6.8) (drill 6.2) (layers *.Cu *.Mask))
-  ${ 
-    !p.param.northHole 
-      ? '' 
-      : ('(pad 1 thru_hole circle (at 0 -19.05 ' + p.rot + ') (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))')
+  ${
+    !p.param.centerHole
+      ? ""
+      : `(pad "" thru_hole circle (at 0 0 ${p.rot}) (size 6.8 6.8) (drill 6.2) (layers *.Cu *.Mask))`
+  }
+  ${
+    !p.param.northHole
+      ? ""
+      : "(pad 1 thru_hole circle (at 0 -19.05 " +
+        p.rot +
+        ") (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))"
   }
   ${
     !p.param.eastHole
-      ? ''
-      : ('(pad 1 thru_hole circle (at 19.05  0 ' + p.rot + ') (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))')
+      ? ""
+      : "(pad 1 thru_hole circle (at 19.05  0 " +
+        p.rot +
+        ") (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))"
   }
   ${
     !p.param.southHole
-      ? ''
-      : ('(pad 1 thru_hole circle (at 0  19.05 ' + p.rot + ') (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))')
+      ? ""
+      : "(pad 1 thru_hole circle (at 0  19.05 " +
+        p.rot +
+        ") (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))"
   }
   ${
     !p.param.westHole
-      ? ''
-      : ('(pad 1 thru_hole circle (at -19.05 0 ' + p.rot + ') (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))')
+      ? ""
+      : "(pad 1 thru_hole circle (at -19.05 0 " +
+        p.rot +
+        ") (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))"
   }
 )
-    `
-  }
-}
+    `;
+  },
+};

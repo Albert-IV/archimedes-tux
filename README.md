@@ -15,13 +15,18 @@ Built with [Ergogen](https://github.com/mrzealot/ergogen).
 
 ## Ideas / Goals
 
-- [ ] Re-add Puck support
+- [x] Re-add Puck support
   - [x]  Add initial footprint to library
   - [x]  Fix text when rotation makes the text apppear in the wrong order
   - [x]  Make each individual screw hole able to be turned on / off
   - [x]  Add PR to Erogogen
-  - [ ]  Add / place puck on board
+  - [x]  Add / place puck on board
 - [ ] Make Pro Micro footprint reversible
+  - [x]  Add footprint to repo
+  - [ ]  Rotate footprint
+  - [ ]  Convert footprint to Erogogen footprint
+  - [ ]  Add PR to Erogogen
+  - [ ]  Add / place on board
 - [ ] Change routing in bottom area to allow for larger silkscreen eye
 - [ ] Mousebites on TRRS jack (removable TRRS socket for better [[Nice!Nano]] support)
 - [ ] On / Off switch routing for Bluetooth

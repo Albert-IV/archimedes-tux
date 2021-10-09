@@ -318,15 +318,14 @@ pcbs:
         params:
           orientation: down
 
-      # TODO: Add puck to keyboard.
-      #
-      # puck:
-      #   type: tentingpuck
-      #   anchor:
-      #     ref: matrix_inner_home
-      #     shift: [-200, 0]
-      #   params:
-      #     westHole: false
+      puck:
+        type: tentingpuck
+        anchor:
+          ref: matrix_middle_bottom
+          shift: [10, 1.5]
+          rotate: -4
+        params:
+          eastHole: false
 
       reset:
         type: button
