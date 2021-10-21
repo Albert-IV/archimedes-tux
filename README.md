@@ -10,6 +10,8 @@ Built with [Ergogen](https://github.com/mrzealot/ergogen).
 
 * AllPCB came back asking about the drilling holes.  Apparently one of them went through one of the TRRS pads, so I told them to just not cut that one out. The rest of the drilling holes are not through any pads or anything important
 * PCB's shipped
+* PCB's Arrived and Built
+* Confirmed working via QMK!
 
 ## Rev 0.2
 
