@@ -313,7 +313,7 @@ pcbs:
         type: promicro
         anchor:
           ref: matrix_inner_home
-          shift: [19, -7]
+          shift: [22, -7]
           rotate: -90
         params:
           orientation: down
@@ -322,7 +322,7 @@ pcbs:
         type: tentingpuck
         anchor:
           ref: matrix_middle_bottom
-          shift: [10, 1.5]
+          shift: [13, 1.5]
           rotate: -4
         params:
           eastHole: false
@@ -334,7 +334,7 @@ pcbs:
           to: RST
         anchor:
           ref: matrix_inner_home
-          shift: [25, -32]
+          shift: [28, -32]
           rotate: -90
 
       trrs:
@@ -346,7 +346,8 @@ pcbs:
           D: VCC
         anchor:
           ref: matrix_inner_home
-          shift: [34.75, 8]
+          shift: [30, -32]
+          rotate: -90
         params:
           reverse: true
           symmetric: true

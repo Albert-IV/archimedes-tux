@@ -2455,7 +2455,7 @@
 
         
       (module ProMicro (layer F.Cu) (tedit 5B307E4C)
-      (at 105.3898308 -26.4766647 -95)
+      (at 108.3784149 -26.215197500000002 -95)
 
       
       (fp_text reference "MCU1" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -2536,7 +2536,7 @@
         
 
 (module "Tenting Puck" (layer F.Cu) (tedit 5F09F7E8)
-  (at 58.624363 -29.7933885 -4)
+  (at 61.624363 -29.7933885 -4)
 
   (fp_text reference "_1" (at 7.6835 1.4605) (layer F.Fab)
     hide
@@ -2686,7 +2686,7 @@
         (descr "Low-profile SMD Tactile Switch, https://www.e-switch.com/product-catalog/tact/product-lines/tl3342-series-low-profile-smt-tact-switch")
         (tags "SPST Tactile Switch")
 
-        (at 109.1881054 -1.048862800000002 -95)
+        (at 112.1766895 -0.7873956000000035 -95)
         
         (fp_text reference "B1" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
         (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -2713,7 +2713,7 @@
         
       (module TRRS-PJ-320A-dual (layer F.Cu) (tedit 5970F8E5)
 
-      (at 122.3872334 -40.0468822 -5)   
+      (at 114.1690789 -0.6130841000000018 -95)   
 
       
       (fp_text reference REF** (at 0 14.2) (layer Dwgs.User) (effects (font (size 1 1) (thickness 0.15))))
@@ -2733,16 +2733,16 @@
       (pad "" np_thru_hole circle (at -2.3 1.6) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
       
         
-        (pad 1 thru_hole oval (at 0 11.3 -5) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 29 "GND"))
-        (pad 2 thru_hole oval (at -4.6 10.2 -5) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 29 "GND"))
-        (pad 3 thru_hole oval (at -4.6 6.2 -5) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 38 "P2"))
-        (pad 4 thru_hole oval (at -4.6 3.2 -5) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 31 "VCC"))
+        (pad 1 thru_hole oval (at 0 11.3 -95) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 29 "GND"))
+        (pad 2 thru_hole oval (at -4.6 10.2 -95) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 29 "GND"))
+        (pad 3 thru_hole oval (at -4.6 6.2 -95) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 38 "P2"))
+        (pad 4 thru_hole oval (at -4.6 3.2 -95) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 31 "VCC"))
       
         
-        (pad 1 thru_hole oval (at -4.6 11.3 -5) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 29 "GND"))
-        (pad 2 thru_hole oval (at 0 10.2 -5) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 29 "GND"))
-        (pad 3 thru_hole oval (at 0 6.2 -5) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 38 "P2"))
-        (pad 4 thru_hole oval (at 0 3.2 -5) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 31 "VCC"))
+        (pad 1 thru_hole oval (at -4.6 11.3 -95) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 29 "GND"))
+        (pad 2 thru_hole oval (at 0 10.2 -95) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 29 "GND"))
+        (pad 3 thru_hole oval (at 0 6.2 -95) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 38 "P2"))
+        (pad 4 thru_hole oval (at 0 3.2 -95) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 31 "VCC"))
       )
       
             (gr_line (start 7.4949342 12.5678907) (end 24.8815991 7.909147899999999) (angle 90) (layer Edge.Cuts) (width 0.15))

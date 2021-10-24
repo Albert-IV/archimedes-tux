@@ -4,9 +4,13 @@
         "gen": "ergogen ./src/a-tux.yaml",
         "clean": "rm -rf output/",
         "patch-and-gen": "npm run patch-footprints && npm run gen",
-        "clean-patch-and-gen": "npm run clean && npm run patch-footprints && npm run gen"
+        "clean-patch-and-gen": "npm run clean && npm run patch-footprints && npm run gen",
+        "watch-gen": "watch 'npm run gen' ./src ./footprints",
+        "watch-patch-and-gen": "watch 'npm run patch-and-gen' ./src ./footprints",
+        "watch-clean-patch-and-gen": "watch 'npm run clean-patch-and-gen' ./src ./footprints"
     },
     "dependencies": {
-        "ergogen": "^3.0.0"
+        "ergogen": "^3.0.0",
+        "watch": "^1.0.2"
     }
 }
