@@ -2686,7 +2686,7 @@
         (descr "Low-profile SMD Tactile Switch, https://www.e-switch.com/product-catalog/tact/product-lines/tl3342-series-low-profile-smt-tact-switch")
         (tags "SPST Tactile Switch")
 
-        (at 112.1766895 -0.7873956000000035 -95)
+        (at 110.5329231 -4.946485800000001 -5)
         
         (fp_text reference "B1" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
         (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -2702,10 +2702,10 @@
         (fp_line (start -2.75 -1.25) (end -2.75 1.25) (layer F.SilkS) (width 0.15))
         
         
-        (pad 1 smd rect (at -3.1 -1.85 -95) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 29 "GND"))
-        (pad 1 smd rect (at 3.1 -1.85 -95) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 29 "GND"))
-        (pad 2 smd rect (at -3.1 1.85 -95) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 30 "RST"))
-        (pad 2 smd rect (at 3.1 1.85 -95) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 30 "RST"))
+        (pad 1 smd rect (at -3.1 -1.85 -5) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 29 "GND"))
+        (pad 1 smd rect (at 3.1 -1.85 -5) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 29 "GND"))
+        (pad 2 smd rect (at -3.1 1.85 -5) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 30 "RST"))
+        (pad 2 smd rect (at 3.1 1.85 -5) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 30 "RST"))
     )
     
     
@@ -2713,7 +2713,7 @@
         
       (module TRRS-PJ-320A-dual (layer F.Cu) (tedit 5970F8E5)
 
-      (at 114.1690789 -0.6130841000000018 -95)   
+      (at 113.7333002 4.367889399999996 -95)   
 
       
       (fp_text reference REF** (at 0 14.2) (layer Dwgs.User) (effects (font (size 1 1) (thickness 0.15))))
@@ -2763,31 +2763,28 @@
 (gr_line (start 81.45586924858333 -62.700489333807354) (end 81.6156548 -64.52684629999999) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 80.6194601 -64.614002) (end 81.6156548 -64.5268463) (angle -90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 61.3628959992404 -67.30255292146246) (end 80.70661580000001 -65.61019669999999) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 112.53981412016309 6.535784695219718) (end 114.82884329845986 -19.627938915982895) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 100.89431023321649 -43.93490902566536) (end 121.81439876850617 -42.104638440075654) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 123.32133534597864 -24.907861425486317) (end 124.54151577642897 -38.85458723063357) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 120.07128413653662 -22.180744417563403) (end 118.07889450790185 -22.355055923905557) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 98.16719322529373 -47.18496023510761) (end 99.3002179 -60.1354913) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 115.2092056930235 10.445639281275135) (end 118.77614059999999 -30.3246134) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 100.89431023300081 -43.93490902319976) (end 116.8334252537819 -42.54041714322722) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 119.56054226170468 -39.2903659337851) (end 118.950452 -32.317002900000006) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 118.950452 -32.317002900000006) (end 118.77614059999999 -30.3246134) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 98.16719322507801 -47.18496023264174) (end 99.3002179 -60.1354913) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 98.30402320000002 -60.222647) (end 99.30021790000002 -60.135491300000005) (angle -90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 81.45586924858333 -62.700489333807326) (end 98.3911789 -61.2188417) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 27.62467391536008 -3.9567581825079525) (end 88.24812504522723 18.108373547250363) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 88.72206470139008 18.329375267691972) (end 103.78015051367868 27.023165202888215) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 115.52280078985663 10.708776813339554) (end 115.7773866 10.855762) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 115.52280078985667 10.708776813339583) (end 115.7773866 10.855762) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 115.7773866 10.855762) (end 115.75146914555461 10.900652347706085) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 104.20851336291909 27.32310814420582) (end 117.76274199999999 38.6964564) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 118.4055296 37.930412) (end 117.76274199999999 38.696456399999995) (angle -90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 119.17157399999999 38.573199599999995) (end 130.741751 24.7843996) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 129.9757066 24.141612) (end 130.741751 24.784399599999997) (angle -90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 115.75146914555461 10.9006523477061) (end 130.6184942 23.375567599999997) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 113.60003537960509 9.095385054661705) (end 115.52280078985663 10.708776813339554) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 115.2092056930235 10.445639281275163) (end 115.52280078985667 10.708776813339583) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 26.59861357152293 -1.137680262066354) (end 27.62467387152293 -3.956758162066354) (angle -124.9999959683712) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 87.22206470139008 20.927451467691974) (end 88.72206470139008 18.329375267691972) (angle -10.000002033761568) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 102.28015051367869 29.621241402888224) (end 104.20851341367869 27.323108102888224) (angle -10.000001054460988) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 115.52839822884549 6.797251795979292) (end 112.53981412884549 6.5357846959792925) (angle -54.99999638765314) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 117.81742740714225 -19.36647181522312) (end 118.07889450714225 -22.355055915223122) (angle -89.99999999999667) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 120.33275123729622 -25.169328526245813) (end 120.07128413729622 -22.180744426245813) (angle -90.0000000000021) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 121.55293166774655 -39.116054331393116) (end 124.54151576774655 -38.85458723139312) (angle -89.99999999999888) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 101.15577733397612 -46.92349313434777) (end 98.16719323397612 -47.18496023434777) (angle -90.00000000000398) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 116.57195815302228 -39.55183303454464) (end 119.56054225302228 -39.290365934544646) (angle -89.99999999999893) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 101.15577733376041 -46.92349313188217) (end 98.16719323376041 -47.184960231882165) (angle -89.99999999999946) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 61.624363100000004 -70.29113703014487) (end 58.624363100000004 -70.29113703014487) (angle -85.00000244946955) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 35.624363100000004 -68.72969085435393) (end 35.8858302 -65.74110675435394) (angle -85.00000244946955) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 14.076480604553833 -48.20637169544338) (end 14.852937604553833 -45.308594195443376) (angle -79.99999965681376) (layer Edge.Cuts) (width 0.15))

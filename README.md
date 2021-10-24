@@ -6,7 +6,7 @@ Based off the excellent [Architeuthis Dux keyboard](https://github.com/tapioki/c
 
 Built with [Ergogen](https://github.com/mrzealot/ergogen).
 
-##### Rev 0.1 - Sent to AllPCB
+##### Rev 0.1 - Working!
 
 * AllPCB came back asking about the drilling holes.  Apparently one of them went through one of the TRRS pads, so I told them to just not cut that one out. The rest of the drilling holes are not through any pads or anything important
 * PCB's shipped
@@ -22,14 +22,14 @@ Built with [Ergogen](https://github.com/mrzealot/ergogen).
 - [ ] Make Pro Micro footprint reversible
   - [x]  Add footprint to repo
   - [x]  Rotate footprint
-  - [x]  Add additional row of pins for Nice!Nano
   - [ ]  Add representation of the USB cutout / area
-  - [ ]  Change pads to match Ergogen
-  - [ ]  Convert footprint to Erogogen footprint
+  - [ ]  Change pads / silks to match Ergogen
+  - [ ]  Convert Kicad footprint to Erogogen footprint
   - [ ]  Add PR to Erogogen
   - [ ]  Add / place on board
-- [ ] On / Off routing for battery with support for [[Nice!Nano]] battery pins
-- [ ] Mousebites on TRRS jack (removable TRRS socket for better [[Nice!Nano]] support)
+- [ ] Support [[Nice!Nano]] and (possibly) [[BlueMicro]]
+  - [ ]  On / Off switch for battery 
+  - [ ]  Add battery soldering pads to 
 - [ ] Mousebites on third thumb key?
 - [ ] Change routing in bottom area to allow for larger silkscreen eye
 
@@ -47,6 +47,8 @@ v0.1 -> v0.2
   - [x]  Make each individual screw hole able to be turned on / off
   - [x]  Add PR to Erogogen
   - [x]  Add / place puck on board
+- [x] Mousebites on TRRS jack (removable TRRS socket for better [[Nice!Nano]] support)
+  - [x] Did it a different way, but the same applies
 
 ### To Run Locally
 

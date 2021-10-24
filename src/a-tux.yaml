@@ -81,11 +81,11 @@ points:
           origin: [0, -17]
           rows: 
             bottom:
-              bind: [5, 19, 20, 2]
+              bind: [5, 22, 20, 2]
               column_net: P5
               row_net: P14
             home:
-              bind: [0, 27, 0, 5]
+              bind: [0, 22, 0, 5]
               column_net: P5
               row_net: P16
             top:
@@ -308,6 +308,7 @@ pcbs:
     outlines:
       main:
         outline: second
+
     footprints:
       promicro:
         type: promicro
@@ -334,8 +335,7 @@ pcbs:
           to: RST
         anchor:
           ref: matrix_inner_home
-          shift: [28, -32]
-          rotate: -90
+          shift: [26, -28]
 
       trrs:
         type: trrs
@@ -346,7 +346,7 @@ pcbs:
           D: VCC
         anchor:
           ref: matrix_inner_home
-          shift: [30, -32]
+          shift: [30, -37]
           rotate: -90
         params:
           reverse: true
