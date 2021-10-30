@@ -133,6 +133,7 @@
 (net 38 "P2")
 (net 39 "P3")
 (net 40 "P4")
+(net 41 "P01")
             
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -182,6 +183,7 @@
 (add_net "P2")
 (add_net "P3")
 (add_net "P4")
+(add_net "P01")
   )
 
             
@@ -2686,7 +2688,7 @@
         (descr "Low-profile SMD Tactile Switch, https://www.e-switch.com/product-catalog/tact/product-lines/tl3342-series-low-profile-smt-tact-switch")
         (tags "SPST Tactile Switch")
 
-        (at 110.5329231 -4.946485800000001 -5)
+        (at 110.5329231 -4.946485800000001 175)
         
         (fp_text reference "B1" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
         (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -2702,10 +2704,10 @@
         (fp_line (start -2.75 -1.25) (end -2.75 1.25) (layer F.SilkS) (width 0.15))
         
         
-        (pad 1 smd rect (at -3.1 -1.85 -5) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 29 "GND"))
-        (pad 1 smd rect (at 3.1 -1.85 -5) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 29 "GND"))
-        (pad 2 smd rect (at -3.1 1.85 -5) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 30 "RST"))
-        (pad 2 smd rect (at 3.1 1.85 -5) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 30 "RST"))
+        (pad 1 smd rect (at -3.1 -1.85 175) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 29 "GND"))
+        (pad 1 smd rect (at 3.1 -1.85 175) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 29 "GND"))
+        (pad 2 smd rect (at -3.1 1.85 175) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 30 "RST"))
+        (pad 2 smd rect (at 3.1 1.85 175) (size 1.8 1.1) (layers F.Cu F.Paste F.Mask) (net 30 "RST"))
     )
     
     
@@ -2745,6 +2747,46 @@
         (pad 4 thru_hole oval (at 0 3.2 -95) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 31 "VCC"))
       )
       
+
+        
+        (module E73:SPDT_C128955 (layer F.Cu) (tstamp 5BF2CC3C)
+
+            (at 114.6048576 -5.594057600000003 -95)
+
+            
+            (fp_text reference "T1" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            
+            (fp_line (start 1.95 -1.35) (end -1.95 -1.35) (layer F.SilkS) (width 0.15))
+            (fp_line (start 0 -1.35) (end -3.3 -1.35) (layer F.SilkS) (width 0.15))
+            (fp_line (start -3.3 -1.35) (end -3.3 1.5) (layer F.SilkS) (width 0.15))
+            (fp_line (start -3.3 1.5) (end 3.3 1.5) (layer F.SilkS) (width 0.15))
+            (fp_line (start 3.3 1.5) (end 3.3 -1.35) (layer F.SilkS) (width 0.15))
+            (fp_line (start 0 -1.35) (end 3.3 -1.35) (layer F.SilkS) (width 0.15))
+            
+            
+            (fp_line (start -1.95 -3.85) (end 1.95 -3.85) (layer Dwgs.User) (width 0.15))
+            (fp_line (start 1.95 -3.85) (end 1.95 -1.35) (layer Dwgs.User) (width 0.15))
+            (fp_line (start -1.95 -1.35) (end -1.95 -3.85) (layer Dwgs.User) (width 0.15))
+            
+            
+            (pad "" np_thru_hole circle (at 1.5 0) (size 1 1) (drill 0.9) (layers *.Cu *.Mask))
+            (pad "" np_thru_hole circle (at -1.5 0) (size 1 1) (drill 0.9) (layers *.Cu *.Mask))
+
+            
+            (pad 1 smd rect (at 2.25 2.075 -95) (size 0.9 1.25) (layers F.Cu F.Paste F.Mask) (net 29 "GND"))
+            (pad 2 smd rect (at -0.75 2.075 -95) (size 0.9 1.25) (layers F.Cu F.Paste F.Mask) (net 41 "P01"))
+            (pad 3 smd rect (at -2.25 2.075 -95) (size 0.9 1.25) (layers F.Cu F.Paste F.Mask))
+            
+            
+            (pad "" smd rect (at 3.7 -1.1 -95) (size 0.9 0.9) (layers F.Cu F.Paste F.Mask))
+            (pad "" smd rect (at 3.7 1.1 -95) (size 0.9 0.9) (layers F.Cu F.Paste F.Mask))
+            (pad "" smd rect (at -3.7 1.1 -95) (size 0.9 0.9) (layers F.Cu F.Paste F.Mask))
+            (pad "" smd rect (at -3.7 -1.1 -95) (size 0.9 0.9) (layers F.Cu F.Paste F.Mask))
+        )
+        
+        
             (gr_line (start 7.4949342 12.5678907) (end 24.8815991 7.909147899999999) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 24.622780000000002 6.943221999999999) (end 24.881599 7.909147799999999) (angle -90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 23.700836053221654 -0.36122323036764215) (end 25.5887059 6.684402999999999) (angle 90) (layer Edge.Cuts) (width 0.15))

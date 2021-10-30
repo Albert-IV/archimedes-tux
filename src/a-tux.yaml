@@ -336,6 +336,7 @@ pcbs:
         anchor:
           ref: matrix_inner_home
           shift: [26, -28]
+          rotate: 180
 
       trrs:
         type: trrs
@@ -351,5 +352,19 @@ pcbs:
         params:
           reverse: true
           symmetric: true
+
+      on_off_switch:
+        type: slider
+        nets:
+          from: GND
+          to: P01
+        anchor:
+          ref: matrix_inner_home
+          shift: [30, -27]
+          rotate: -90
+        # params:
+        # TODO: Add ability for this to be reversible with vias in pads in footprint
+        #   reverse: true
+        #   symmetric: true
 
 
